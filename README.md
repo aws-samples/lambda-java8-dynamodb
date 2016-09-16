@@ -1,0 +1,1 @@
+# lambda-java8-dynamodb
