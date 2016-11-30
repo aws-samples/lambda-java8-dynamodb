@@ -34,3 +34,10 @@ as a partition or sort key for the table or a Global Secondary Index (GSI):
 	sport:  String
 	country:  String
 
+
+DEPLOYMENT NOTE:
+
+To deploy this API, consider using AWS SAM (Serverless Application Model).  Using SAM can simplify
+deploying an API, such as this one, built with a single code base that supports multiple Lambda 
+functions.  See http://docs.aws.amazon.com/lambda/latest/dg/deploying-lambda-apps.html.
+
