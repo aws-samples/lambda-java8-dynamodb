@@ -48,5 +48,5 @@ Follow these steps to deploy the application:
 
 -  Create a API Gateway API.  Note that even if you don't do this step, you can still test the Lambda functions via the Lambda console "test function" tab.
 
-To automate deployment of the Lambda functions and API Gateway, consider using AWS SAM (Serverless Application Model).  Using SAM can simplify deploying an API, such as this one, built with a single code base that supports multiple Lambda functions.  See http://docs.aws.amazon.com/lambda/latest/dg/deploying-lambda-apps.html.
-
+**To automate deployment of the Lambda functions and API Gateway, consider using AWS SAM (Serverless Application Model).  Using SAM can simplify deploying an API, such as this one, built with a single code base that supports multiple Lambda functions.  See http://docs.aws.amazon.com/lambda/latest/dg/deploying-lambda-apps.html.
+**
