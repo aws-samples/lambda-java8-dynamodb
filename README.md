@@ -22,20 +22,20 @@ events must be supported, but queries to support the home page are the most impo
 To keep this example simple, only a single Event table in DynamoDB is used to model the data,
 which essentially is a catalog of available events.  Within this table, events are modeled using
 a composite key having the home team name as partition key, and event date as sort key, with
-the away team name as an ordinary attribute.  This allows an event to be modeled as a single item
+the away team name as an ordinary attribute. This allows an event to be modeled as a single item
 in the table.
 
 The primary prerequisite for running the code for this example is to create a table in DynamoDB.
 The following attributes are required, with types indicated and whether the attribute functions
 as a partition or sort key for the table or a Global Secondary Index (GSI):
 
-	homeTeam:  String, Partition Key
+	homeTeam :  String, Partition Key
 	eventDate:  Number, Sort Key
-	awayTeam:  String, GSI Partition Key
-	city:  String, GSI Partition Key
-	eventId:  Number
-	sport:  String
-	country:  String
+	awayTeam :  String, GSI Partition Key
+	city     :  String, GSI Partition Key
+	eventId  :  Number
+	sport    :  String
+	country  :  String
 
 
 ### DEPLOYMENT NOTE:
@@ -48,5 +48,5 @@ Follow these steps to deploy the application:
 
 -  Create a API Gateway API.  Note that even if you don't do this step, you can still test the Lambda functions via the Lambda console "test function" tab.
 
-To automate deployment of the Lambda functions and API Gateway, consider using AWS SAM (Serverless Application Model).  Using SAM can simplify deploying an API, such as this one, built with a single code base that supports multiple Lambda functions.  See http://docs.aws.amazon.com/lambda/latest/dg/deploying-lambda-apps.html.
+To automate deployment of the Lambda functions and API Gateway, consider using AWS SAM (Serverless Application Model).  Using SAM can simplify deploying an API, such as this one, built with a single code base that supports multiple Lambda functions.  For more details go through the link http://docs.aws.amazon.com/lambda/latest/dg/deploying-lambda-apps.html.
 
